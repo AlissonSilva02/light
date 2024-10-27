@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
 
-
   * {
     font-family: Inter;
     color: #ffffff;
@@ -78,11 +77,10 @@
     }
   }
   section {
-
     .banner img {
       animation: pulse 2s ease-in-out infinite alternate;
     }
-    
+
     @keyframes pulse {
       from {
         transform: scale(1);
@@ -91,10 +89,10 @@
         transform: scale(1.05);
       }
     }
-    
+
     .banner {
       background-color: #1b1732;
-      
+
       .nome {
         img {
           position: absolute;
@@ -112,7 +110,6 @@
     }
   }
 
-  
   .services h1 {
     color: #ffffff !important;
   }
@@ -121,8 +118,6 @@
     flex-direction: column;
     align-items: center;
 
-    
-    
     img {
       width: 300px;
       height: auto;
@@ -146,7 +141,7 @@
       border-radius: 1rem;
       transform: scale(0.5);
       animation: zoomIn 1.8s ease-out forwards;
-   
+
       @keyframes zoomIn {
         from {
           transform: scale(0.5);
@@ -157,36 +152,16 @@
       }
     }
 
-    .images > img {
-      flex: 1;
-      border-radius: 1rem;
-      animation: pulseInfinite 4s ease-in-out infinite;
-    }
-    
-    @keyframes pulseInfinite {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05); 
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-    
-    
+   
 
     .services h1 {
-  position: relative;
-  z-index: 1; /* Certifique-se de que está acima das imagens */
-}
-.images > img {
-  position: relative;
-  z-index: 0;
-}
-
-
+      position: relative;
+      z-index: 1; /* Certifique-se de que está acima das imagens */
+    }
+    .images > img {
+      position: relative;
+      z-index: 0;
+    }
 
     .services {
       font-family: Weather;
@@ -197,7 +172,7 @@
       margin-left: 30px;
       gap: 120px;
       text-align: center;
-      
+
       h1 {
         width: 200px;
       }
@@ -221,6 +196,7 @@
       margin-top: 30px;
       margin-bottom: 10px;
     }
+
     .contato {
       display: flex;
       background-color: #000000;
@@ -233,9 +209,38 @@
       max-width: 400px;
       text-decoration: none;
 
-      img {
-        width: 50px;
-        height: auto;
+      /* Animação infinita */
+      animation: pulse 2s ease-in-out infinite; /* Animação de pulsar contínua */
+    }
+
+    @keyframes pulse {
+      0%,
+      100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05); /* Aumenta 5% no meio da animação */
+      }
+    }
+
+    .contato img {
+      width: 50px;
+      animation: swing 1.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes swing {
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+      25% {
+        transform: translateX(-5px);
+      }
+      50% {
+        transform: translateX(5px);
+      }
+      75% {
+        transform: translateX(-2.5px);
       }
     }
 
