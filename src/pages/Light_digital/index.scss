@@ -209,40 +209,11 @@
       max-width: 400px;
       text-decoration: none;
 
-      /* Animação infinita */
-      animation: pulse 2s ease-in-out infinite; /* Animação de pulsar contínua */
     }
 
-    @keyframes pulse {
-      0%,
-      100% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05); /* Aumenta 5% no meio da animação */
-      }
-    }
-
-    .contato img {
-      width: 50px;
-      animation: swing 1.5s ease-in-out infinite alternate;
-    }
-
-    @keyframes swing {
-      0%,
-      100% {
-        transform: translateX(0);
-      }
-      25% {
-        transform: translateX(-5px);
-      }
-      50% {
-        transform: translateX(5px);
-      }
-      75% {
-        transform: translateX(-2.5px);
-      }
-    }
+  .contato img {
+    width: 50px;
+  }
 
     p {
       li {
