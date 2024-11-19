@@ -2,6 +2,7 @@
   background-color: #1b1732;
   display: flex;
   flex-direction: column;
+  width: 100%;
 
   background-color: #1b1732;
   display: flex;
@@ -39,14 +40,14 @@
       }
 
       img {
-        width: 80px;
+        width: 8vw;
         height: auto;
         margin: 10px;
       }
       .links {
-        gap: 70px;
+        gap: 4vw;
         display: flex;
-        font-size: 10px;
+        font-size: 1vw;
         margin-left: 40dvw;
         h1 {
           a {
@@ -77,19 +78,7 @@
     }
   }
   section {
-    .banner img {
-      animation: pulse 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes pulse {
-      from {
-        transform: scale(1);
-      }
-      to {
-        transform: scale(1.05);
-      }
-    }
-
+    
     .banner {
       background-color: #1b1732;
 
@@ -110,30 +99,49 @@
     }
   }
 
-  .services h1 {
-    color: #ffffff !important;
-  }
+  .saas{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border: 1px solid;
+    width: 20vw;
+
+   
+  } 
+  
+  
+  .images{ div{
+      
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+
+    }}
   .servicos {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     img {
-      width: 300px;
+      width: 20vw;
       height: auto;
-      padding-bottom: 30px;
+      padding-bottom: 3vh;
     }
 
     h1 {
-      padding: 20px 0px 40px;
-      font-size: 30px;
+    
+      font-size: 2.5vw;
       font-weight: 800;
       color: #ffffff;
     }
 
     .images {
       display: flex;
-      gap: 2rem;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid;
+      gap: 4rem;
     }
 
     .images > img {
@@ -170,7 +178,7 @@
       align-items: center;
       margin-top: 130px;
       margin-left: 30px;
-      gap: 120px;
+      gap: 12vw;
       text-align: center;
 
       h1 {
@@ -181,6 +189,7 @@
 
   .sobre {
     margin: 50px;
+    font-size: 1.3vw;
     margin-bottom: 0px;
     flex-direction: column;
     display: flex;
@@ -200,19 +209,19 @@
     .contato {
       display: flex;
       background-color: #000000;
-      padding: 20px;
+      padding: 1vw;
       border-radius: 15px;
-      gap: 35px;
+      gap: 3.5vw;
       align-items: center;
-      font-size: 20px;
+      font-size: 2vw;
       margin-bottom: 30px;
-      max-width: 400px;
+      max-width: 40vw;
       text-decoration: none;
 
     }
 
   .contato img {
-    width: 50px;
+    width: 4vw;
   }
 
     p {
@@ -236,6 +245,20 @@
       opacity: 0;
       animation: fadeInFooter 2.2s ease-in forwards;
       animation-delay: 2s;
+      
+      
+      .contatos{
+        width: fit-content;
+        font-size: 1.5vw;
+
+    
+        
+   
+      }    .what{
+           border: 1px solid;
+           width: 400px;
+          
+        }
 
       @keyframes fadeInFooter {
         from {
@@ -256,7 +279,7 @@
           align-items: center;
           margin-bottom: 20px;
           img {
-            max-width: 30px;
+            max-width: 3vw;
           }
         }
       }
@@ -266,14 +289,12 @@
         gap: 20px;
 
         .light {
-          max-width: 200px;
-          max-height: auto;
+          max-width: 15vw;
           border-radius: 3px;
         }
 
         .lampada {
-          max-width: 200px;
-          max-height: auto;
+          width: 5vw;
           border-radius: 3px;
         }
       }
@@ -281,7 +302,7 @@
   }
 }
 
-@media (min-width: 308px) and (max-width: 668px) {
+@media (min-width: 308px) and (max-width: 568px) {
   .cabecalho {
     flex-direction: column;
 
@@ -333,10 +354,12 @@
   .rodape {
     display: flex;
     flex-direction: column;
+    width: 100%;
     gap: 20px !important;
     align-items: center;
     .images {
       flex-direction: column;
+      width: 4vw;
       align-items: center;
 
       .light {
@@ -346,7 +369,7 @@
       }
 
       .lampada {
-        max-width: 100px !important;
+        width: 10vw;
         max-height: auto;
         border-radius: 3px;
       }
@@ -355,7 +378,7 @@
 }
 
 /* 2 cards por linha */
-@media (min-width: 669px) and (max-width: 1312px) {
+@media (min-width: 769px) and (max-width: 1212px) {
   .cabecalho {
     display: flex;
 
@@ -386,6 +409,6 @@
 
   .rodape {
     display: flex !important;
-    gap: 25dvw !important;
+    gap: 25vw !important;
   }
 }
