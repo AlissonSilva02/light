@@ -19,6 +19,7 @@
     .cabecalho {
       display: flex;
       flex-direction: row;
+      justify-content: space-evenly;
       align-items: center;
       background-color: #121222;
       color: #ffffff;
@@ -41,14 +42,14 @@
 
       img {
         width: 8vw;
-        height: auto;
+        height: 8vw;
         margin: 10px;
       }
       .links {
         gap: 4vw;
         display: flex;
         font-size: 1vw;
-        margin-left: 40dvw;
+        
         h1 {
           a {
             animation: color 10s infinite;
@@ -93,7 +94,7 @@
         }
       }
       img {
-        width: 97.5vw;
+        width: 100%;
         height: auto;
       }
     }
@@ -139,7 +140,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 4rem;
+      gap: 1rem;
     }
 
     .images > img {
@@ -187,7 +188,7 @@
 
   .sobre {
     margin: 50px;
-    font-size: 1.3vw;
+    font-size: 1rem;
     margin-bottom: 0px;
     flex-direction: column;
     display: flex;
@@ -211,7 +212,6 @@
       border-radius: 15px;
       gap: 3.5vw;
       align-items: center;
-      font-size: 2vw;
       margin-bottom: 30px;
       max-width: 40vw;
       text-decoration: none;
@@ -237,8 +237,7 @@
       display: flex;
       background-color: #121222;
       padding: 40px;
-      justify-content: end;
-      gap: 45vw;
+      justify-content: space-between;
 
       opacity: 0;
       animation: fadeInFooter 2.2s ease-in forwards;
@@ -247,13 +246,12 @@
       
       .contatos{
         width: fit-content;
-        font-size: 1.5vw;
+        font-size: 1rem;
 
     
         
    
       }    .what{
-           border: 1px solid;
            width: 400px;
           
         }
@@ -284,11 +282,13 @@
 
       .images {
         display: flex;
+        align-items: center;
         gap: 20px;
 
         .light {
           max-width: 15vw;
           border-radius: 3px;
+          background-color: #121222;
         }
 
         .lampada {
@@ -308,7 +308,7 @@
       align-self: self-start;
     }
     .links {
-      flex-direction: column;
+      
       gap: 10px !important;
       margin: 10px;
       margin-left: 20dvw !important;
@@ -324,9 +324,7 @@
       }
     }
 
-    img {
-      max-width: 96vw;
-    }
+
   }
   .servicos {
     flex-direction: column;
@@ -344,21 +342,15 @@
       flex-direction: column;
       gap: 19rem !important;
     }
-    .images {
-      flex-direction: column;
-    }
+    
   }
 
   .rodape {
     display: flex;
-    flex-direction: column;
     width: 100%;
     gap: 20px !important;
-    align-items: center;
+
     .images {
-      flex-direction: column;
-      width: 4vw;
-      align-items: center;
 
       .light {
         max-width: 100px !important;

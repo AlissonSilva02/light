@@ -5,7 +5,7 @@ export default function Light() {
     <div className="light">
       <header>
         <div className="cabecalho">
-          <img src="assets\images\light\light.png" alt="" />
+          <img src="assets\images\light\light.svg" alt="logoLight" />
 
           <div className="links">
             <h1>
@@ -128,7 +128,7 @@ export default function Light() {
           <div className="images">
             <img
               className="lampada"
-              src="assets/images/light/light.png"
+              src="assets/images/light/light.svg"
               alt=""
             />
             <img
